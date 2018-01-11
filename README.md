@@ -19,7 +19,6 @@ php artisan serve
 5. Ready to use.
 
 
-## WIP
 ## Mix
 
 For more info: https://laravel.com/docs/5.5/mix
