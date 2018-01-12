@@ -3,7 +3,7 @@ Taalmaatje is a platform where people who bareley, or dont speak speak Dutch, ca
 
 
 ## How to start editing Taalmaatje.
-Open a terminal.
+**Open a terminal.**
 
 1. CD into the "taalmaatje" folder.
 
