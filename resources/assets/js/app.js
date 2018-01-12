@@ -20,3 +20,9 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+// Radio buttuns active state
+$('#form-register .form-header .radio').click(function(){
+	$('#form-register .form-header .radio').removeClass('selected');
+	$(this).addClass('selected');
+});

@@ -16,52 +16,65 @@
     </head>
     <body id="template-register">
 
-    	<div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
+        <div id="app">
 
-                    <h1>I want to...</h1>
-                    
-                    <div id="pop">
+        	<div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
 
-                        <form>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" value="option1" checked>
-                                    ...find a Taalmaatje
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" value="option2">
-                                    ...become a Taalmaatje
-                                </label>
-                            </div>
-                            
-                            <div class="form-group">
-                                <input type="firstname" class="form-control" placeholder="first name">
-                            </div>
-                            <div class="form-group">
-                                <input type="lastname" class="form-control" placeholder="last name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="e-mail">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="password">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="repeat password">
-                            </div>
+                        <h1 class="welcome">I want to...</h1>
+                        
+                        <div class="pop">
 
-                            <button type="submit" class="btn btn-default">register</button>
-                        </form>
+                            <form id="form-register">
+                                <div class="form-header">
+                                    <div class="radio selected">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" value="findTaalmaatje" checked>
+                                            ...find a Taalmaatje
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" value="becomeTaalmaatje">
+                                            ...become a Taalmaatje
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <input type="firstname" class="form-control" placeholder="first name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="lastname" class="form-control" placeholder="last name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="dateOfBirth" class="form-control" placeholder="date of birth">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="e-mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="repeat password">
+                                    </div>
 
-                    </div>   
+                                    <button type="submit" class="btn btn-default">register</button>
+                                </div>
+                            </form>
 
+                        </div>   
+
+                    </div>
                 </div>
-            </div>
-    	</div>
+        	</div>
+
+        </div>
+
+        <script src="js/app.js"></script>
 
     </body>
 </html>

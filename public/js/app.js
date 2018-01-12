@@ -993,6 +993,12 @@ var app = new Vue({
   el: '#app'
 });
 
+// Radio buttuns active state
+$('#form-register .form-header .radio').click(function () {
+  $('#form-register .form-header .radio').removeClass('selected');
+  $(this).addClass('selected');
+});
+
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
