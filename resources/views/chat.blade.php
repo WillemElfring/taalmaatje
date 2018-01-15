@@ -7,7 +7,7 @@
         <div id="video-chat-them"></div>
         <div id="video-chat-you"></div>
 		
-		<div class="controlls">
+		<div class="controls">
 
             <div class="container-fluid">
                 <div class="row">
@@ -51,6 +51,23 @@
 
                     </div>
                     
+                </div>
+            </div>
+        </div>
+
+        <div id="text-send-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+
+
+                            <form id="form-send-text" action="">
+                                <input type="text" id="type-area" class="form-control" placeholder="Type a message">
+                                <button type="submit" id="text-send-button" class="btn btn-default"><i class="ion-android-send"></i></button>
+                            </form>
+
+
+                    </div>
                 </div>
             </div>
         </div>

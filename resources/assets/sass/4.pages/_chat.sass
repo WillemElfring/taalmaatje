@@ -11,10 +11,13 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 
 // body#template-chat
 
-
+// Video chat
 #video-chat-container
+	display: none
+	position: relative
 
 	#video-chat-them
+
 
 	#video-chat-you
 		position: absolute
@@ -26,7 +29,7 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 		border-radius: 5px
 
 
-	.controlls
+	.controls
 		position: absolute
 		bottom: 0
 		width: 100%
@@ -40,7 +43,7 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 			a
 				width: 60px
 				line-height: 60px
-				border-radius: 99px
+				border-radius: 9999px
 				background: rgba(black, 0.75)
 				text-align: center
 				font-size: 32px
@@ -52,14 +55,14 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 
 
 
-
+// Text chat
 #text-chat-container
 	background: white
-	padding-bottom: 60px
 
 	#text-chat
 		display: flex
 		flex-direction: column
+		padding-bottom: 60px
 
 		.bubble
 			position: relative
@@ -103,3 +106,30 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 					margin-right: -15px
 					border-width: 15px 15px 0 0
 					border-color: $gradient-color-1 transparent transparent transparent;
+
+
+
+// Text chat send
+#text-send-container
+	position: fixed
+	bottom: 0
+	width: 100%
+	background: red
+	padding: 10px 0
+
+	#form-send-text
+		display: flex
+		justify-content: space-between
+
+		#type-area
+			padding: 0 20px
+			height: 40px
+			margin-right: 10px
+			border-radius: 9999px
+			border: none
+
+		#text-send-button
+			padding: 0
+			margin: 0
+			width: 40px
+			line-height: 40px
