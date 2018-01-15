@@ -2,6 +2,12 @@
 Taalmaatje is a platform where people who bareley, or dont speak speak Dutch, can video and text chat with somebody who can.
 
 
+## Requirements
+Make sure you have:
+- Composer: https://getcomposer.org/
+- Node.js: https://nodejs.org/
+
+
 ## How to start editing Taalmaatje.
 **Open a terminal.**
 
