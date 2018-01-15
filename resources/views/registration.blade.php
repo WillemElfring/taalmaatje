@@ -50,7 +50,28 @@
                                         <input type="lastname" class="form-control" placeholder="last name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="dateOfBirth" class="form-control" placeholder="date of birth">
+                                        <!-- <input type="dateOfBirth" class="form-control" placeholder="date of birth"> -->
+                                        <select class="form-control">
+                                            <option>day</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                        <select class="form-control">
+                                            <option>month</option>
+                                            <option>januari</option>
+                                            <option>februari</option>
+                                            <option>march</option>
+                                        </select>
+                                        <select class="form-control">
+                                            <option>year</option>
+                                            <option>2018</option>
+                                            <option>2017</option>
+                                            <option>2016</option>
+                                            <option>2015</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <input type="email" class="form-control" placeholder="e-mail">
