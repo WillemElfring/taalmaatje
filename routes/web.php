@@ -22,3 +22,7 @@ Route::get('login', function () {
 Route::get('register', function () {
     return view('registration');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
