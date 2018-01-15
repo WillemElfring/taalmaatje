@@ -55,6 +55,7 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 
 #text-chat-container
 	background: white
+	padding-bottom: 60px
 
 	#text-chat
 		display: flex
@@ -62,14 +63,13 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 
 		.bubble
 			position: relative
-			padding: 5px
+			padding: 5px 12px
 			border-radius: 5px
-			background: pink
-			margin: 5px 0
+			margin: 7px 0
 			max-width: 60%
+			background: $gray-light
 
 			&.bubble-them
-				background: $gray-light
 				border-top-left-radius: 0
 				margin-left: 15px
 
@@ -93,21 +93,13 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 				border-top-right-radius: 0
 				margin-right: 15px
 				background: white
-				border: 2px solid $gradient-color-1
+				background: $gradient-color-1
+				color: white
 
 				&:before
 					@extend .bubble-them:before
 					left: auto
 					right: 0
-					top: -2px
 					margin-right: -15px
 					border-width: 15px 15px 0 0
 					border-color: $gradient-color-1 transparent transparent transparent;
-				
-				&:after
-					@extend .bubble-you:before
-					top: 0
-					margin-right: -10px
-					border-width: 10px 10px 0 0
-					border-color: white transparent transparent transparent
-
