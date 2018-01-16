@@ -31,6 +31,7 @@
 
 
     <div id="text-chat-container">
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
@@ -60,17 +61,18 @@
                 <div class="row">
                     <div class="col-sm-12">
 
-
                             <form id="form-send-text" action="">
+
                                 <input type="text" id="type-area" class="form-control" placeholder="Type a message">
                                 <button type="submit" id="text-send-button" class="btn btn-default"><i class="ion-android-send"></i></button>
+                                
                             </form>
-
 
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
 @endsection

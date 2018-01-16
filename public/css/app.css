@@ -8494,6 +8494,7 @@ body#template-register .pop {
 #video-chat-container {
   display: none;
   position: relative;
+  height: 100vh;
 }
 
 #video-chat-container #video-chat-you {
@@ -8549,7 +8550,8 @@ body#template-register .pop {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 60px;
+  padding-bottom: 62px;
+  padding-top: 7px;
 }
 
 #text-chat-container #text-chat .bubble {
@@ -8603,7 +8605,7 @@ body#template-register .pop {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: red;
+  background: white;
   padding: 10px 0;
 }
 
@@ -8611,9 +8613,6 @@ body#template-register .pop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 #text-send-container #form-send-text #type-area {
@@ -8622,13 +8621,14 @@ body#template-register .pop {
   margin-right: 10px;
   border-radius: 9999px;
   border: none;
+  background: #f5f5f5;
 }
 
 #text-send-container #form-send-text #text-send-button {
   padding: 0;
   margin: 0;
+  min-width: 40px;
   width: 40px;
-  line-height: 40px;
 }
 
 .navbar {

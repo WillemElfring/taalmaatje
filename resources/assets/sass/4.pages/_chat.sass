@@ -15,6 +15,7 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 #video-chat-container
 	display: none
 	position: relative
+	height: 100vh
 
 	#video-chat-them
 
@@ -62,7 +63,8 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 	#text-chat
 		display: flex
 		flex-direction: column
-		padding-bottom: 60px
+		padding-bottom: 62px
+		padding-top: 7px
 
 		.bubble
 			position: relative
@@ -114,12 +116,11 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 	position: fixed
 	bottom: 0
 	width: 100%
-	background: red
+	background: white
 	padding: 10px 0
 
 	#form-send-text
 		display: flex
-		justify-content: space-between
 
 		#type-area
 			padding: 0 20px
@@ -127,9 +128,10 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 			margin-right: 10px
 			border-radius: 9999px
 			border: none
+			background: $gray-light
 
 		#text-send-button
 			padding: 0
 			margin: 0
+			min-width: 40px
 			width: 40px
-			line-height: 40px
