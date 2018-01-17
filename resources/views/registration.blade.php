@@ -44,7 +44,7 @@
                                 
                                 <div class="form-body">
                                     <div class="form-group">
-                                        <input type="firstname" class="form-control" placeholder="first name">
+                                        <input type="firstname" class="form-control" placeholder="first name" >
                                     </div>
                                     <div class="form-group">
                                         <input type="lastname" class="form-control" placeholder="last name">

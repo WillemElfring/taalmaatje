@@ -19,7 +19,7 @@ Route::get('login', function () {
     return view('Login');
 });
 
-Route::get('register', function () {
+Route::get('registere', function () {
     return view('registration');
 });
 
