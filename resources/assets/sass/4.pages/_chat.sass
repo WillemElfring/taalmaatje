@@ -1,0 +1,137 @@
+
+
+
+$icon-height: 60px
+$controll-padding-top: 20px
+$controll-padding-bottom: $controll-padding-top
+
+$video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-padding-bottom
+
+
+
+// body#template-chat
+
+// Video chat
+#video-chat-container
+	display: none
+	position: relative
+	height: 100vh
+
+	#video-chat-them
+
+
+	#video-chat-you
+		position: absolute
+		bottom: $video-chat-you-margin-bottom
+		right: $grid-gutter-width / 2
+		width: 90px
+		height: 135px
+		background: rgba(black, 0.75)
+		border-radius: 5px
+
+
+	.controls
+		position: absolute
+		bottom: 0
+		width: 100%
+		padding-top: $controll-padding-top
+		padding-bottom: $controll-padding-bottom
+
+		ul
+			display: flex
+			justify-content: space-between
+
+			a
+				width: 60px
+				line-height: 60px
+				border-radius: 9999px
+				background: rgba(black, 0.75)
+				text-align: center
+				font-size: 32px
+				color: white
+
+				&#icon-phone
+					background: red
+
+
+
+
+// Text chat
+#text-chat-container
+	background: white
+
+	#text-chat
+		display: flex
+		flex-direction: column
+		padding-bottom: 62px
+		padding-top: 7px
+
+		.bubble
+			position: relative
+			padding: 5px 12px
+			border-radius: 5px
+			margin: 7px 0
+			max-width: 60%
+			background: $gray-light
+
+			&.bubble-them
+				border-top-left-radius: 0
+				margin-left: 15px
+
+				&:before
+					content: ""
+					display: block
+					position: absolute
+					top: 0
+					left: 0
+					margin-left: -15px
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 0 15px 15px 0
+					border-color: transparent $gray-light transparent transparent
+
+
+
+			&.bubble-you
+				align-self: flex-end
+				border-top-right-radius: 0
+				margin-right: 15px
+				background: white
+				background: $gradient-color-1
+				color: white
+
+				&:before
+					@extend .bubble-them:before
+					left: auto
+					right: 0
+					margin-right: -15px
+					border-width: 15px 15px 0 0
+					border-color: $gradient-color-1 transparent transparent transparent;
+
+
+
+// Text chat send
+#text-send-container
+	position: fixed
+	bottom: 0
+	width: 100%
+	background: white
+	padding: 10px 0
+
+	#form-send-text
+		display: flex
+
+		#type-area
+			padding: 0 20px
+			height: 40px
+			margin-right: 10px
+			border-radius: 9999px
+			border: none
+			background: $gray-light
+
+		#text-send-button
+			padding: 0
+			margin: 0
+			min-width: 40px
+			width: 40px

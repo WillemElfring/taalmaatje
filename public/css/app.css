@@ -5,6 +5,25 @@ body {
   min-height: 100%;
 }
 
+#vide-chat {
+  padding: 200px;
+  background: red;
+}
+
+.no-dots {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.no-dots li,
+.no-dots a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -8356,8 +8375,10 @@ button.close {
 }
 
 #app {
-  max-width: 720px;
+  position: relative;
   margin: 0 auto;
+  min-height: 100vh;
+  background: orangered;
 }
 
 .form-control,
@@ -8467,5 +8488,149 @@ body#template-register .pop {
 
 #form-register .form-body {
   padding: 30px;
+}
+
+#video-chat-container {
+  display: none;
+  position: relative;
+  height: 100vh;
+}
+
+#video-chat-container #video-chat-you {
+  position: absolute;
+  bottom: 100px;
+  right: 15px;
+  width: 90px;
+  height: 135px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+#video-chat-container .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#video-chat-container .controls ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#video-chat-container .controls ul a {
+  width: 60px;
+  line-height: 60px;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  font-size: 32px;
+  color: white;
+}
+
+#video-chat-container .controls ul a#icon-phone {
+  background: red;
+}
+
+#text-chat-container {
+  background: white;
+}
+
+#text-chat-container #text-chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 62px;
+  padding-top: 7px;
+}
+
+#text-chat-container #text-chat .bubble {
+  position: relative;
+  padding: 5px 12px;
+  border-radius: 5px;
+  margin: 7px 0;
+  max-width: 60%;
+  background: #f5f5f5;
+}
+
+#text-chat-container #text-chat .bubble.bubble-them {
+  border-top-left-radius: 0;
+  margin-left: 15px;
+}
+
+#text-chat-container #text-chat .bubble.bubble-them:before,
+#text-chat-container #text-chat .bubble.bubble-you:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -15px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 15px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+
+#text-chat-container #text-chat .bubble.bubble-you {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-top-right-radius: 0;
+  margin-right: 15px;
+  background: white;
+  background: #7735da;
+  color: white;
+}
+
+#text-chat-container #text-chat .bubble.bubble-you:before {
+  left: auto;
+  right: 0;
+  margin-right: -15px;
+  border-width: 15px 15px 0 0;
+  border-color: #7735da transparent transparent transparent;
+}
+
+#text-send-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  padding: 10px 0;
+}
+
+#text-send-container #form-send-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#text-send-container #form-send-text #type-area {
+  padding: 0 20px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 9999px;
+  border: none;
+  background: #f5f5f5;
+}
+
+#text-send-container #form-send-text #text-send-button {
+  padding: 0;
+  margin: 0;
+  min-width: 40px;
+  width: 40px;
+}
+
+.navbar {
+  display: none;
 }
 
