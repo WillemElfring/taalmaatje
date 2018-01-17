@@ -3,6 +3,7 @@ Taalmaatje is a platform where people who bareley, or dont speak speak Dutch, ca
 
 
 ## Requirements
+**Taalmaatje is build in Laravel**
 Make sure you have:
 - Composer: https://getcomposer.org/
 - Node.js: https://nodejs.org/
