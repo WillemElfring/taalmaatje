@@ -24,6 +24,7 @@ body {
   padding: 0;
   line-height: 1;
 }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -8378,7 +8379,6 @@ button.close {
   position: relative;
   margin: 0 auto;
   min-height: 100vh;
-  background: orangered;
 }
 
 .form-control,
@@ -8426,28 +8426,28 @@ button.close {
   color: white;
 }
 
-body#template-register {
+#template-register {
   background: linear-gradient(30deg, #7735da 0%, #f73685 100%);
 }
 
-body#template-register .welcome {
+#template-register .welcome {
   color: white;
   font-weight: bold;
   text-align: center;
   margin: 60px 0 30px;
 }
 
-body#template-register .pop {
+#template-register .pop {
   margin-bottom: 60px;
 }
 
-#form-register .form-header {
+#template-register #form-register .form-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#form-register .form-header .radio {
+#template-register #form-register .form-header .radio {
   margin: 0;
   width: 50%;
   background: #f5f5f5;
@@ -8456,24 +8456,24 @@ body#template-register .pop {
   transition: all 0.2s;
 }
 
-#form-register .form-header .radio:first-of-type {
+#template-register #form-register .form-header .radio:first-of-type {
   border-radius: 5px 0 0 0;
 }
 
-#form-register .form-header .radio:last-of-type {
+#template-register #form-register .form-header .radio:last-of-type {
   border-radius: 0 5px 0 0;
 }
 
-#form-register .form-header .radio.selected {
+#template-register #form-register .form-header .radio.selected {
   background: #fff;
   color: black;
 }
 
-#form-register .form-header .radio.selected label {
+#template-register #form-register .form-header .radio.selected label {
   font-weight: bold;
 }
 
-#form-register .form-header .radio label {
+#template-register #form-register .form-header .radio label {
   margin: 0;
   padding: 17px 0;
   width: 100%;
@@ -8482,21 +8482,21 @@ body#template-register .pop {
   font-weight: normal;
 }
 
-#form-register .form-header .radio input {
+#template-register #form-register .form-header .radio input {
   display: none;
 }
 
-#form-register .form-body {
+#template-register #form-register .form-body {
   padding: 30px;
 }
 
-#video-chat-container {
+body#template-chat #video-chat-container {
   display: none;
   position: relative;
   height: 100vh;
 }
 
-#video-chat-container #video-chat-you {
+body#template-chat #video-chat-container #video-chat-you {
   position: absolute;
   bottom: 100px;
   right: 15px;
@@ -8506,7 +8506,7 @@ body#template-register .pop {
   border-radius: 5px;
 }
 
-#video-chat-container .controls {
+body#template-chat #video-chat-container .controls {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -8514,7 +8514,7 @@ body#template-register .pop {
   padding-bottom: 20px;
 }
 
-#video-chat-container .controls ul {
+body#template-chat #video-chat-container .controls ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8523,7 +8523,7 @@ body#template-register .pop {
           justify-content: space-between;
 }
 
-#video-chat-container .controls ul a {
+body#template-chat #video-chat-container .controls ul a {
   width: 60px;
   line-height: 60px;
   border-radius: 9999px;
@@ -8533,15 +8533,15 @@ body#template-register .pop {
   color: white;
 }
 
-#video-chat-container .controls ul a#icon-phone {
+body#template-chat #video-chat-container .controls ul a#icon-phone {
   background: red;
 }
 
-#text-chat-container {
+body#template-chat #text-chat-container {
   background: white;
 }
 
-#text-chat-container #text-chat {
+body#template-chat #text-chat-container #text-chat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8553,7 +8553,7 @@ body#template-register .pop {
   padding-top: 7px;
 }
 
-#text-chat-container #text-chat .bubble {
+body#template-chat #text-chat-container #text-chat .bubble {
   position: relative;
   padding: 5px 12px;
   border-radius: 5px;
@@ -8562,13 +8562,13 @@ body#template-register .pop {
   background: #f5f5f5;
 }
 
-#text-chat-container #text-chat .bubble.bubble-them {
+body#template-chat #text-chat-container #text-chat .bubble.bubble-them {
   border-top-left-radius: 0;
   margin-left: 15px;
 }
 
-#text-chat-container #text-chat .bubble.bubble-them:before,
-#text-chat-container #text-chat .bubble.bubble-you:before {
+body#template-chat #text-chat-container #text-chat .bubble.bubble-them:before,
+body#template-chat #text-chat-container #text-chat .bubble.bubble-you:before {
   content: "";
   display: block;
   position: absolute;
@@ -8582,7 +8582,7 @@ body#template-register .pop {
   border-color: transparent #f5f5f5 transparent transparent;
 }
 
-#text-chat-container #text-chat .bubble.bubble-you {
+body#template-chat #text-chat-container #text-chat .bubble.bubble-you {
   -ms-flex-item-align: end;
       align-self: flex-end;
   border-top-right-radius: 0;
@@ -8592,7 +8592,7 @@ body#template-register .pop {
   color: white;
 }
 
-#text-chat-container #text-chat .bubble.bubble-you:before {
+body#template-chat #text-chat-container #text-chat .bubble.bubble-you:before {
   left: auto;
   right: 0;
   margin-right: -15px;
@@ -8600,7 +8600,7 @@ body#template-register .pop {
   border-color: #7735da transparent transparent transparent;
 }
 
-#text-send-container {
+body#template-chat #text-send-container {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -8608,13 +8608,13 @@ body#template-register .pop {
   padding: 10px 0;
 }
 
-#text-send-container #form-send-text {
+body#template-chat #text-send-container #form-send-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#text-send-container #form-send-text #type-area {
+body#template-chat #text-send-container #form-send-text #type-area {
   padding: 0 20px;
   height: 40px;
   margin-right: 10px;
@@ -8623,7 +8623,7 @@ body#template-register .pop {
   background: #f5f5f5;
 }
 
-#text-send-container #form-send-text #text-send-button {
+body#template-chat #text-send-container #form-send-text #text-send-button {
   padding: 0;
   margin: 0;
   min-width: 40px;

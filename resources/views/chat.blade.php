@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+<?php $template = 'chat' ?>
+
 @section('content')
 
 	<div id="video-chat-container">

@@ -1,5 +1,5 @@
 
-body#template-register
+#template-register
 	background: $gradient
 
 	.welcome
@@ -12,47 +12,47 @@ body#template-register
 		margin-bottom: 60px
 
 
-// Register form
-#form-register
-	.form-header
-		display: flex
+	// Register form
+	#form-register
+		.form-header
+			display: flex
 
-		.radio 
-			margin: 0
-			width: 50%
-			background: $gray-light
-			color: $gray-dark
-
-			transition: all 0.2s
-
-
-			&:first-of-type
-				border-radius: $pop-border-radius 0 0 0
-
-			&:last-of-type
-				border-radius: 0 $pop-border-radius 0 0
-
-
-			// selected highlighter
-			&.selected
-				background: #fff
-				color: black
-
-				& label
-					font-weight: bold
-
-
-			label
+			.radio 
 				margin: 0
-				padding: 17px 0
-				width: 100%
-				text-align: center
-				font-size: 14px
-				font-weight: normal
+				width: 50%
+				background: $gray-light
+				color: $gray-dark
 
-			input
-				display: none
+				transition: all 0.2s
 
-	.form-body
-		padding: 30px
+
+				&:first-of-type
+					border-radius: $pop-border-radius 0 0 0
+
+				&:last-of-type
+					border-radius: 0 $pop-border-radius 0 0
+
+
+				// selected highlighter
+				&.selected
+					background: #fff
+					color: black
+
+					& label
+						font-weight: bold
+
+
+				label
+					margin: 0
+					padding: 17px 0
+					width: 100%
+					text-align: center
+					font-size: 14px
+					font-weight: normal
+
+				input
+					display: none
+
+		.form-body
+			padding: 30px
 

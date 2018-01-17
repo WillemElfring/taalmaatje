@@ -10,13 +10,15 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     
 </head>
-<body>
+<body id="template-{{ $template }}">
     <div id="app">
+       
+
+        <?php /*
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -72,11 +74,12 @@
                 </div>
             </div>
         </nav>
+        */?>
 
         @yield('content')
+    
     </div>
 
-    <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
