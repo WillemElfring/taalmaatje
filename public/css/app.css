@@ -2,12 +2,9 @@
 
 html,
 body {
+  position: relative;
   min-height: 100%;
-}
-
-#vide-chat {
-  padding: 200px;
-  background: red;
+  height: 100%;
 }
 
 .no-dots {
@@ -8378,7 +8375,7 @@ button.close {
 #app {
   position: relative;
   margin: 0 auto;
-  min-height: 100vh;
+  height: 100%;
 }
 
 .form-control,
@@ -8426,28 +8423,28 @@ button.close {
   color: white;
 }
 
-#template-register {
+body#template-register {
   background: linear-gradient(30deg, #7735da 0%, #f73685 100%);
 }
 
-#template-register .welcome {
+body#template-register .welcome {
   color: white;
   font-weight: bold;
   text-align: center;
   margin: 60px 0 30px;
 }
 
-#template-register .pop {
+body#template-register .pop {
   margin-bottom: 60px;
 }
 
-#template-register #form-register .form-header {
+body#template-register #form-register .form-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#template-register #form-register .form-header .radio {
+body#template-register #form-register .form-header .radio {
   margin: 0;
   width: 50%;
   background: #f5f5f5;
@@ -8456,24 +8453,24 @@ button.close {
   transition: all 0.2s;
 }
 
-#template-register #form-register .form-header .radio:first-of-type {
+body#template-register #form-register .form-header .radio:first-of-type {
   border-radius: 5px 0 0 0;
 }
 
-#template-register #form-register .form-header .radio:last-of-type {
+body#template-register #form-register .form-header .radio:last-of-type {
   border-radius: 0 5px 0 0;
 }
 
-#template-register #form-register .form-header .radio.selected {
+body#template-register #form-register .form-header .radio.selected {
   background: #fff;
   color: black;
 }
 
-#template-register #form-register .form-header .radio.selected label {
+body#template-register #form-register .form-header .radio.selected label {
   font-weight: bold;
 }
 
-#template-register #form-register .form-header .radio label {
+body#template-register #form-register .form-header .radio label {
   margin: 0;
   padding: 17px 0;
   width: 100%;
@@ -8482,18 +8479,17 @@ button.close {
   font-weight: normal;
 }
 
-#template-register #form-register .form-header .radio input {
+body#template-register #form-register .form-header .radio input {
   display: none;
 }
 
-#template-register #form-register .form-body {
+body#template-register #form-register .form-body {
   padding: 30px;
 }
 
 body#template-chat #video-chat-container {
-  display: none;
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 
 body#template-chat #video-chat-container #video-chat-you {
@@ -8510,6 +8506,8 @@ body#template-chat #video-chat-container .controls {
   position: absolute;
   bottom: 0;
   width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(transparent));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -8538,7 +8536,9 @@ body#template-chat #video-chat-container .controls ul a#icon-phone {
 }
 
 body#template-chat #text-chat-container {
-  background: white;
+  display: none;
+  height: 75vh;
+  overflow: scroll;
 }
 
 body#template-chat #text-chat-container #text-chat {
@@ -8628,6 +8628,49 @@ body#template-chat #text-send-container #form-send-text #text-send-button {
   margin: 0;
   min-width: 40px;
   width: 40px;
+}
+
+body#template-chat.text-chat-is-open #video-chat-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+}
+
+body#template-chat.text-chat-is-open #video-chat-container #video-chat-them {
+  width: 50%;
+}
+
+body#template-chat.text-chat-is-open #video-chat-container #video-chat-you {
+  position: initial;
+  width: 50%;
+  height: auto;
+  border-radius: 0;
+}
+
+body#template-chat.text-chat-is-open #video-chat-container .controls {
+  padding-bottom: 15px;
+}
+
+body#template-chat.text-chat-is-open #video-chat-container .controls ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body#template-chat.text-chat-is-open #video-chat-container .controls li {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+
+body#template-chat.text-chat-is-open #video-chat-container .controls a {
+  width: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+body#template-chat.text-chat-is-open #text-chat-container {
+  display: block;
 }
 
 .navbar {

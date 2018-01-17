@@ -963,7 +963,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(10);
-module.exports = __webpack_require__(42);
+module.exports = __webpack_require__(44);
 
 
 /***/ }),
@@ -993,11 +993,12 @@ var app = new Vue({
   el: '#app'
 });
 
-// Radio buttuns active state
-$('#form-register .form-header .radio').click(function () {
-  $('#form-register .form-header .radio').removeClass('selected');
-  $(this).addClass('selected');
-});
+/**
+ * Taalmaatjes custom javascript
+ */
+
+__webpack_require__(42);
+__webpack_require__(43);
 
 /***/ }),
 /* 11 */
@@ -43011,6 +43012,58 @@ if (false) {
 
 /***/ }),
 /* 42 */
+/***/ (function(module, exports) {
+
+
+// Radio buttuns active state for the register form
+$('#form-register .form-header .radio').click(function () {
+
+	$('#form-register .form-header .radio').removeClass('selected');
+	$(this).addClass('selected');
+});
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports) {
+
+
+//////////////////////////////////////////////////
+// 
+//	Chat opening and closing
+//
+//////////////////////////////////////////////////
+
+var chatIsOpen = false;
+
+// trigger
+$('#icon-chat').click(function (e) {
+	e.preventDefault();
+	toggleChat();
+});
+
+// open chat
+function openChat() {
+	$('body').addClass('text-chat-is-open');
+	chatIsOpen = true;
+}
+
+// close chat
+function closeChat() {
+	$('body').removeClass('text-chat-is-open');
+	chatIsOpen = false;
+}
+
+// toggle open / close chat
+function toggleChat() {
+	if (chatIsOpen == false) {
+		openChat();
+	} else {
+		closeChat();
+	}
+}
+
+/***/ }),
+/* 44 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

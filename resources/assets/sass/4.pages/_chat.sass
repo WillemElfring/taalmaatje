@@ -1,9 +1,11 @@
 
+//////////////////////////////////////////////////
 // 
 // 	These variables are here to calculate
 // 	the positioning of the #video-chat-you
-// 	from the bottom
+// 	from the bottom.
 //
+//////////////////////////////////////////////////
 
 $icon-height: 60px
 $controll-padding-top: 20px
@@ -14,13 +16,22 @@ $video-chat-you-margin-bottom: $icon-height + $controll-padding-top + $controll-
 
 
 
+
+
+//////////////////////////////////////////////////
+//
+//	Template chat.
+//
+//////////////////////////////////////////////////
+
 body#template-chat
 
-	// video chat
+	//
+	//	Video chat
+	//
 	#video-chat-container
-		display: none
 		position: relative
-		height: 100vh
+		height: 100%
 
 		#video-chat-them
 
@@ -39,6 +50,7 @@ body#template-chat
 			position: absolute
 			bottom: 0
 			width: 100%
+			background: $fade-to-top
 			padding-top: $controll-padding-top
 			padding-bottom: $controll-padding-bottom
 
@@ -60,10 +72,13 @@ body#template-chat
 
 
 
-
-	// text chat
+	//
+	//	Text chat
+	//
 	#text-chat-container
-		background: white
+		display: none
+		height: 75vh
+		overflow: scroll
 
 		#text-chat
 			display: flex
@@ -97,7 +112,6 @@ body#template-chat
 						border-color: transparent $gray-light transparent transparent
 
 
-
 				&.bubble-you
 					align-self: flex-end
 					border-top-right-radius: 0
@@ -116,7 +130,9 @@ body#template-chat
 
 
 
-	// text chat send
+	//
+	//	Text chat type area
+	//
 	#text-send-container
 		position: fixed
 		bottom: 0
@@ -140,3 +156,52 @@ body#template-chat
 				margin: 0
 				min-width: 40px
 				width: 40px
+
+
+
+
+
+	//////////////////////////////////////////////////
+	// 
+	//	When the text chat is open.
+	//
+	//////////////////////////////////////////////////
+
+	&.text-chat-is-open
+
+		//
+		//	Video chat
+		//
+		#video-chat-container
+			display: flex
+			height: 200px
+
+			#video-chat-them
+				width: 50%
+
+			#video-chat-you
+				position: initial
+				width: 50%
+				height: auto
+				border-radius: 0
+
+			.controls 
+				padding-bottom: 15px
+
+				ul
+					justify-content: center
+
+				li
+					padding-right: 7.5px
+					padding-left: 7.5px
+
+				a
+					width: 40px
+					line-height: 40px
+					font-size: 20px
+				
+		//
+		//	Text chat
+		//
+		#text-chat-container
+			display: block
