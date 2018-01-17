@@ -8492,6 +8492,10 @@ body#template-chat #video-chat-container {
   height: 100%;
 }
 
+body#template-chat #video-chat-container #video-chat-them {
+  height: 100%;
+}
+
 body#template-chat #video-chat-container #video-chat-you {
   position: absolute;
   bottom: 100px;
@@ -8500,6 +8504,8 @@ body#template-chat #video-chat-container #video-chat-you {
   height: 135px;
   background: rgba(0, 0, 0, 0.75);
   border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.25);
 }
 
 body#template-chat #video-chat-container .controls {
@@ -8537,8 +8543,9 @@ body#template-chat #video-chat-container .controls ul a#icon-phone {
 
 body#template-chat #text-chat-container {
   display: none;
-  height: 75vh;
-  overflow: scroll;
+  height: 75%;
+  overflow: auto;
+  background: white;
 }
 
 body#template-chat #text-chat-container #text-chat {
@@ -8551,7 +8558,6 @@ body#template-chat #text-chat-container #text-chat {
           flex-direction: column;
   padding-bottom: 62px;
   padding-top: 7px;
-  background: white;
 }
 
 body#template-chat #text-chat-container #text-chat .bubble {
@@ -8635,7 +8641,7 @@ body#template-chat.text-chat-is-open #video-chat-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 200px;
+  height: 25%;
 }
 
 body#template-chat.text-chat-is-open #video-chat-container #video-chat-them {
@@ -8647,6 +8653,8 @@ body#template-chat.text-chat-is-open #video-chat-container #video-chat-you {
   width: 50%;
   height: auto;
   border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 body#template-chat.text-chat-is-open #video-chat-container .controls {

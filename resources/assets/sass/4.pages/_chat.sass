@@ -1,6 +1,6 @@
 
 //////////////////////////////////////////////////
-// 
+//
 // 	These variables are here to calculate
 // 	the positioning of the #video-chat-you
 // 	from the bottom.
@@ -34,7 +34,7 @@ body#template-chat
 		height: 100%
 
 		#video-chat-them
-
+			height: 100%
 
 		#video-chat-you
 			position: absolute
@@ -44,6 +44,7 @@ body#template-chat
 			height: 135px
 			background: rgba(black, 0.75)
 			border-radius: 5px
+			box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.25)
 
 
 		.controls
@@ -77,15 +78,15 @@ body#template-chat
 	//
 	#text-chat-container
 		display: none
-		height: 75vh
-		overflow: scroll
+		height: 75%
+		overflow: auto
+		background: white
 
 		#text-chat
 			display: flex
 			flex-direction: column
 			padding-bottom: 62px
 			padding-top: 7px
-			background: white
 
 			.bubble
 				position: relative
@@ -127,7 +128,7 @@ body#template-chat
 						right: 0
 						margin-right: -15px
 						border-width: 15px 15px 0 0
-						border-color: $gradient-color-1 transparent transparent transparent;
+						border-color: $gradient-color-1 transparent transparent transparent
 
 
 
@@ -163,7 +164,7 @@ body#template-chat
 
 
 	//////////////////////////////////////////////////
-	// 
+	//
 	//	When the text chat is open.
 	//
 	//////////////////////////////////////////////////
@@ -175,7 +176,7 @@ body#template-chat
 		//
 		#video-chat-container
 			display: flex
-			height: 200px
+			height: 25%
 
 			#video-chat-them
 				width: 50%
@@ -185,8 +186,9 @@ body#template-chat
 				width: 50%
 				height: auto
 				border-radius: 0
+				box-shadow: none
 
-			.controls 
+			.controls
 				padding-bottom: 15px
 
 				ul
@@ -200,7 +202,7 @@ body#template-chat
 					width: 40px
 					line-height: 40px
 					font-size: 20px
-				
+
 		//
 		//	Text chat
 		//
