@@ -997,6 +997,7 @@ var app = new Vue({
  * Taalmaatjes custom javascript
  */
 
+__webpack_require__(55);
 __webpack_require__(42);
 __webpack_require__(43);
 
@@ -43067,6 +43068,31 @@ function toggleChat() {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */
+/***/ (function(module, exports) {
+
+
+//////////////////////////////////////////////////
+//
+//	Nav opening and closing
+//
+//////////////////////////////////////////////////
+
+$('#header .hamburger').click(function () {
+    $('#nav-container').addClass('open');
+});
 
 /***/ })
 /******/ ]);

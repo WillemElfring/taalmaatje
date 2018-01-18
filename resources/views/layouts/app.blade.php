@@ -12,11 +12,25 @@
 
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+
 </head>
 <body id="template-{{ $template }}">
     <div id="app">
-       
+
+        <div id="header">
+            <div class="hamburger ion-android-menu"></div>
+            <div class="profile ion-android-person"></div>
+        </div>
+
+        <div id="nav-container">
+            <ul class="no-dots">
+                <li><a href="">test</a></li>
+                <li><a href="">test</a></li>
+                <li><a href="">test</a></li>
+                <li><a href="">test</a></li>
+            </ul>
+        </div>
+
 
         <?php /*
         <nav class="navbar navbar-default navbar-static-top">
@@ -77,7 +91,7 @@
         */?>
 
         @yield('content')
-    
+
     </div>
 
     <script src="{{ asset('js/app.js') }}"></script>

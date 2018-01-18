@@ -25,5 +25,6 @@ const app = new Vue({
  * Taalmaatjes custom javascript
  */
 
+require('./nav');
 require('./register');
 require('./chat');

@@ -8,13 +8,13 @@
 
         <div id="video-chat-them"></div>
         <div id="video-chat-you"></div>
-		
+
 		<div class="controls">
 
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12">
-                        
+
             			<ul class="no-dots">
             				<li><a href="" id="icon-phone" class="ion-ios-telephone"></a></li>
             				<li><a href="" id="icon-camera" class="ion-ios-videocam"></a></li>
@@ -39,7 +39,7 @@
                 <div class="col-sm-12">
 
                     <div id="text-chat">
-                    
+
                         <div class="bubble bubble-them">Hello i am Trissa!</div>
                         <div class="bubble bubble-you">Hello im John, how are you doing today?</div>
                         <div class="bubble bubble-them">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima vitae iste, ad voluptate deleniti repudiandae amet officia laudantium est, beatae voluptates natus officiis quidem ipsam nemo quas suscipit quisquam. Dicta.</div>
@@ -53,7 +53,7 @@
                         <div class="bubble bubble-you">Si.</div>
 
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
 
                                 <input type="text" id="type-area" class="form-control" placeholder="Type a message">
                                 <button type="submit" id="text-send-button" class="btn btn-default"><i class="ion-android-send"></i></button>
-                                
+
                             </form>
 
                     </div>
@@ -76,5 +76,6 @@
         </div>
 
     </div>
+
 
 @endsection
