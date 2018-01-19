@@ -1,0 +1,52 @@
+
+//////////////////////////////////////////////////
+//
+//	Template profile.
+//
+//////////////////////////////////////////////////
+
+#profile-container
+	position: absolute
+	right: -100%
+	width: 100%
+	min-height: 100%
+	background: red
+	z-index: 99
+
+	transition: all 0.3s
+
+
+	.avatar
+		position: relative
+		height: 100vw
+		background: url(https://ih1.redbubble.net/image.120730135.7037/flat,800x800,075,f.u1.jpg)
+		background-size: cover
+		background-position: center
+
+
+	.icons
+		position: absolute
+		bottom: 0
+		padding-bottom: 15px
+
+		ul
+			display: flex
+
+			li
+				margin-right: 15px
+
+			a
+				line-height: 45px
+				width: 45px
+				background: rgba(black, .75)
+				color: white
+				text-align: center
+				font-size: 25px
+				border-radius: 999px
+
+	.info
+
+
+
+		&.profile-open
+			right: 0

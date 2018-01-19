@@ -4,6 +4,59 @@
 
 @section('content')
 
+
+	<div id="profile-container">
+
+		<div class="profile">
+
+			<div class="avatar">
+
+				<div class="icons">
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-12">
+
+								<ul class="no-dots">
+									<li><a href="" class="ion-android-star-outline"></a></li>
+									<li><a href="" class="ion-heart"></a></li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+		</div>
+
+
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+
+					<div class="info">
+
+						<h2>Trissa Winslow (26)</h2>
+
+						<h4><b>About me</b></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ab saepe sequi vel suscipit, corporis ipsum, laudantium animi distinctio provident dolore quod repellendus, ratione autem, aperiam rem eos dolorum vero.</p>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
 	<div id="video-chat-container">
 
         <div id="video-chat-them"></div>
@@ -16,10 +69,10 @@
                     <div class="col-sm-12">
 
             			<ul class="no-dots">
-            				<li><a href="" id="icon-phone" class="ion-ios-telephone"></a></li>
-            				<li><a href="" id="icon-camera" class="ion-ios-videocam"></a></li>
-            				<li><a href="" id="icon-mic" class="ion-android-microphone"></a></li>
-            				<li><a href="" id="icon-chat" class="ion-chatbubbles"></a></li>
+            				<li><a href="" class="ion-ios-telephone"></a></li>
+            				<li><a href="" class="ion-ios-videocam"></a></li>
+            				<li><a href="" class="ion-android-microphone"></a></li>
+            				<li><a href="" class="chat-toggle ion-chatbubbles"></a></li>
             			</ul>
 
                     </div>
