@@ -963,7 +963,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(10);
-module.exports = __webpack_require__(44);
+module.exports = __webpack_require__(45);
 
 
 /***/ }),
@@ -997,9 +997,8 @@ var app = new Vue({
  * Taalmaatjes custom javascript
  */
 
-__webpack_require__(55);
-__webpack_require__(42);
 __webpack_require__(43);
+__webpack_require__(44);
 
 /***/ }),
 /* 11 */
@@ -43012,7 +43011,8 @@ if (false) {
 }
 
 /***/ }),
-/* 42 */
+/* 42 */,
+/* 43 */
 /***/ (function(module, exports) {
 
 
@@ -43024,7 +43024,7 @@ $('#form-register .form-header .radio').click(function () {
 });
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports) {
 
 
@@ -43064,35 +43064,10 @@ function toggleChat() {
 }
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */
-/***/ (function(module, exports) {
-
-
-//////////////////////////////////////////////////
-//
-//	Nav opening and closing
-//
-//////////////////////////////////////////////////
-
-$('#header .hamburger').click(function () {
-    $('#nav-container').addClass('open');
-});
 
 /***/ })
 /******/ ]);

@@ -8372,37 +8372,6 @@ button.close {
   }
 }
 
-#header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 60px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(transparent));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
-}
-
-#header .hamburger,
-#header .profile {
-  width: 60px;
-  line-height: 60px;
-  color: white;
-  text-align: center;
-  font-size: 27px;
-  cursor: pointer;
-}
-
-#nav-container {
-  position: absolute;
-  top: -999px;
-}
-
-#nav-container.open {
-  top: 0;
-}
-
 #app {
   position: relative;
   margin: 0 auto;

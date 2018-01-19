@@ -17,21 +17,6 @@
 <body id="template-{{ $template }}">
     <div id="app">
 
-        <div id="header">
-            <div class="hamburger ion-android-menu"></div>
-            <div class="profile ion-android-person"></div>
-        </div>
-
-        <div id="nav-container">
-            <ul class="no-dots">
-                <li><a href="">test</a></li>
-                <li><a href="">test</a></li>
-                <li><a href="">test</a></li>
-                <li><a href="">test</a></li>
-            </ul>
-        </div>
-
-
         <?php /*
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
