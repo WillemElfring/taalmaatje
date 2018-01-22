@@ -1428,7 +1428,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #000;
-  background-color: #f5f8fa;
+  background-color: white;
 }
 
 input,
@@ -1477,7 +1477,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.6;
-  background-color: #f5f8fa;
+  background-color: white;
   border: 1px solid #ddd;
   border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3076,7 +3076,7 @@ th {
 }
 
 .table .table {
-  background-color: #f5f8fa;
+  background-color: white;
 }
 
 .table-condensed > thead > tr > th,
@@ -5167,7 +5167,7 @@ tbody.collapse.in {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #ccc;
-  background-color: #f5f8fa;
+  background-color: white;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -5268,7 +5268,7 @@ tbody.collapse.in {
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #f5f8fa;
+    border-bottom-color: white;
   }
 }
 
@@ -6336,7 +6336,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 25px;
   line-height: 1.6;
-  background-color: #f5f8fa;
+  background-color: white;
   border: 1px solid #ddd;
   border-radius: 0;
   -webkit-transition: border 0.2s ease-in-out;
@@ -8376,6 +8376,7 @@ button.close {
   position: relative;
   margin: 0 auto;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .form-control,
@@ -8421,6 +8422,77 @@ button.close {
 .btn-default {
   background: linear-gradient(30deg, #7735da 0%, #f73685 100%);
   color: white;
+}
+
+#profile-container {
+  position: fixed;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: white;
+  z-index: 100;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#profile-container .avatar {
+  position: relative;
+  height: 100vw;
+  background-size: cover;
+  background-position: center;
+}
+
+#profile-container .icons {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 15px;
+}
+
+#profile-container .icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#profile-container .icons ul li {
+  margin-right: 15px;
+}
+
+#profile-container .icons ul a {
+  line-height: 45px;
+  width: 45px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 999px;
+}
+
+#profile-container .icons ul .like.active {
+  background: #f1c40f;
+}
+
+#profile-container .icons ul .heart.active {
+  background: #f73685;
+}
+
+#profile-backdrop {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 90;
+}
+
+body.profile-is-open #profile-container {
+  position: absolute;
+  right: -60px;
+}
+
+body.profile-is-open #profile-backdrop {
+  display: block;
 }
 
 body#template-register {
