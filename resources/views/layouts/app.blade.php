@@ -17,7 +17,7 @@
 <body id="template-{{ $template }}">
     <div id="app">
 
-        <?php /*
+
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </nav>
-        */?>
+
 
         @yield('content')
 

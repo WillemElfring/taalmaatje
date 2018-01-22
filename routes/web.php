@@ -19,8 +19,8 @@ Route::get('login', function () {
     return view('Login');
 });
 
-Route::get('registere', function () {
-    return view('registration');
+Route::get('register', function () {
+    return view('register');
 });
 
 Route::get('chat', function () {

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<?php $template = 'home' ?>
 
 @section('content')
 <div class="container">
