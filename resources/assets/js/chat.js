@@ -74,35 +74,36 @@ var profileOpenClass		= 'profile-is-open';
 // triggers
 triggerOpenProfile.click(function(e) {
 	e.preventDefault();
-	openChat();
+	openProfile();
 });
 triggerCloseProfile.click(function(e) {
 	e.preventDefault();
-	closeChat();
+	closeProfile();
 });
 triggerToggleProfile.click(function(e) {
 	e.preventDefault();
-	toggleChat();
+	toggleProfile();
 });
 
 
-// open chat
-function openChat() {
+// open profile
+function openProfile() {
 	$('body').addClass(profileOpenClass);
 	profileIsOpen = true;
+	$('#profile-container .avatar').height($(this).width())
 }
 
-// close chat
-function closeChat() {
+// close profile
+function closeProfile() {
 	$('body').removeClass(profileOpenClass);
 	profileIsOpen = false;
 }
 
-// toggle open / close chat
-function toggleChat() {
+// toggle open / close profile
+function toggleProfile() {
 	if (profileIsOpen == false) {
-		openChat();
+		openProfile();
 	} else {
-		closeChat();
+		closeProfile();
 	}
 }

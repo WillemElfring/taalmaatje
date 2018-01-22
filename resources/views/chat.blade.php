@@ -9,7 +9,7 @@
 
 		<div class="profile">
 
-			<div class="avatar">
+			<div class="avatar" style="background-image: url(https://ih0.redbubble.net/image.363915427.3586/flat,800x800,075,t.u2.jpg)">
 
 				<div class="icons">
 
@@ -18,8 +18,8 @@
 							<div class="col-sm-12">
 
 								<ul class="no-dots">
-									<li><a href="" class="ion-android-star-outline"></a></li>
-									<li><a href="" class="ion-heart"></a></li>
+									<li><a href="" class="like ion-android-star-outline"></a></li>
+									<li><a href="" class="heart active ion-heart"></a></li>
 								</ul>
 
 							</div>
@@ -29,10 +29,10 @@
 
 				</div>
 
+			</div>
+
 		</div>
 
-
-		</div>
 
 		<div class="container-fluid">
 			<div class="row">
@@ -52,6 +52,8 @@
 		</div>
 
 	</div>
+
+	<div id="profile-backdrop" class="profile-close"></div>
 
 
 
